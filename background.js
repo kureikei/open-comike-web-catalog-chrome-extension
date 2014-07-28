@@ -8,6 +8,14 @@ chrome.contextMenus.create({
             return String.fromCharCode(s.charCodeAt(0) - 0xFEE0);
         });
 
+        // 半角カナ to 全角カナ
+        t = t.replace(/[ﾊﾋﾌﾍﾎ]ﾟ/g, function (s) {
+            return "パピプペポ".substr("ﾊﾋﾌﾍﾎ".indexOf(s[0]), 1);
+        });
+        t = t.replace(/[ｱ-ﾛ]/g, function (s) {
+            return "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロ".substr('ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛ'.indexOf(s), 1);
+        });
+
         var i = -1;
         var day = 1;
         if ((i = t.search(/8\/15|15日|金曜|[1一]日目|金\W*[東西A-Zア-ロあ-れ]|初日/)) >= 0) day = 1;
