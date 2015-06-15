@@ -1,8 +1,8 @@
 {
     "name": "コミケ Web カタログのサークルページを開く",
-    "version": "0.2",
+    "version": "0.3",
     "manifest_version": 2,
-    "description": "30日西く20a などのテキストから、Comike Web Catalog のサークルページを開きます。C87用。",
+    "description": "30日西く20a などのテキストから、Comike Web Catalog のサークルページを開きます。C88用。",
     "permissions": [ "tabs", "contextMenus", "http://*/", "https://*/" ],
     "background": {
         "scripts": [ "background.js" ]
