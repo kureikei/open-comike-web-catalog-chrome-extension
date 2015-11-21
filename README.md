@@ -1,6 +1,6 @@
 ## コミケ Web カタログのサークルページを開く Chrome 拡張
 
-「30日西く20a」などのテキストから、Comike Web Catalog のサークルページを開きます。C88用。
+「30日西く20a」などのテキストから、Comike Web Catalog のサークルページを開きます。C89用。
 
 ![screenshot](https://cloud.githubusercontent.com/assets/8276381/3713043/ae70f6ce-1548-11e4-8d5e-2b9742e72bab.png)
 
